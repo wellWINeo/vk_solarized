@@ -1,0 +1,47 @@
+{
+    "manifest_version": 2,
+ 
+    "name": "Solarized тема для VK | Solarized theme for VK",
+    "short_name": "Solarized theme for VK",
+    "description": "Дополнение изменяет стандартный дизайн социальной сети ВКонтакте придавая ему solarized цветовую схему.",
+	"version": "3.1.1",
+	"author": "wellWINeo",
+	"homepage_url": "https://github.com/wellWINeo/vk_solarized",
+	
+	"icons": {
+		"48": "icons/48.png",
+		"64": "icons/64.png",
+		"128": "icons/128.png",
+		"256": "icons/256.png"
+	},
+	"browser_action": {
+        "default_icon": {
+			"16": "icons/popup_dark_16.png",
+			"24": "icons/popup_dark_24.png",
+			"32": "icons/popup_dark_32.png"
+		}
+    },
+	
+	"background": {
+		"scripts": [
+			"files/script/background.js"
+		]
+	},
+
+	"permissions": [
+		"tabs",
+		"*://vk.com/*",
+		"*://*.vk.com/*",
+		"storage"
+	],
+	"content_scripts": [
+		{
+			"matches": ["*://vk.com/*", "*://*.vk.com/*"],
+			"js": [
+				"files/script/styles.js",
+				"files/script/inject.js"
+			],
+			"run_at": "document_start"
+		}
+	]
+}
