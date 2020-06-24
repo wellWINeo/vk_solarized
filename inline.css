@@ -1388,11 +1388,11 @@ textarea ~ .placeholder .ph_content {
  background-color:#586e75!important
 }
 .im-mess.im-mess_unread {
- background-color:#3a3a3d!important
+ background-color:#073642!important
 }
 .im-mess.im-mess_selected:last-child:before,
 .im-mess.im-mess_unread:last-child:before {
- background-color:#3a3a3d!important
+ background-color:#073642!important
 }
 .im-mess.im-mess_selected.im-mess.im-mess_unread {
  background-color:#586e75!important
