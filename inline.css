@@ -62,7 +62,7 @@ input.ui_search_field {
  filter:#ff0000 brightness(0.73) invert(1)!important
 }
 .ui_tabs.page_info_tabs {
- background-color:#ff0000!important
+ background-color:#002b36!important
 }
 .wall_module .post_like_icon {
  background-image:url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2214%22%20viewBox%3D%220%200%2016%2014%22%20style%3D%22fill%3A%23FF734C%3B%22%3E%3Cpath%20d%3D%22M8%203.2C7.4-0.3%203.2-0.8%201.4%201%20-0.5%202.9-0.5%205.8%201.4%207.7%201.9%208.2%206.9%2013%206.9%2013%207.4%2013.6%208.5%2013.6%209%2013L14.5%207.7C16.5%205.8%2016.5%202.9%2014.6%201%2012.8-0.7%208.6-0.3%208%203.2Z%22%2F%3E%3C%2Fsvg%3E)!important;
@@ -439,7 +439,7 @@ a.ts_search_link.active {
 }
 #top_notify_wrap:before,
 #top_notify_wrap:after {
- border-bottom-color:#586e75!important
+ border-bottom-color:#ff0000!important
 }
 .top_notify_show_all {
  background-color:#073642!important;
@@ -457,10 +457,10 @@ a.ts_search_link.active {
  background-color:#eee8d5!important
 }
 .top_audio_player:hover {
- background-color:#3a3a3a!important
+ background-color:#073642!important
 }
 .top_audio_player .top_audio_player_title {
- color:#aaa!important
+ color:#eee8d5!important
 }
 body:not(.article_ed_body) .eltt {
  background-color:#002b36	!important;
@@ -580,19 +580,19 @@ body:not(.article_ed_body) .eltt {
 }
 .top_nav_link:hover,
 .top_nav_link.active {
- background-color:#3a3a3a!important
+ background-color:#073642!important
 }
 .top_profile_arrow {
  -webkit-filter:#ff0000!important;
  filter:#ff0000!important
 }
 #top_profile_menu {
- background-color:#586e75!important;
+ background-color:#002b36!important;
  border-color:transparent!important
 }
 #top_profile_menu:before,
 #top_profile_menu:after {
- border-bottom-color:#586e75!important
+ border-bottom-color:#eee8d5!important
 }
 .top_profile_mrow:hover {
  background-color:#073642!important
@@ -641,7 +641,7 @@ body:not(.article_ed_body) .eltt {
 }
 #stl_left .back,
 #stl_text {
- color:#073642!important
+ color:#eee8d5!important
 }
 #stl_text {
  -webkit-filter:#ff0000!important;
@@ -649,7 +649,7 @@ body:not(.article_ed_body) .eltt {
 }
 .top_nav_btn:hover,
 .top_nav_btn.active {
- background-color:#3a3a3a!important
+ background-color:#eee8d5!important
 }
 .top_nav_btn#top_notify_btn .top_nav_btn_icon {
  -webkit-filter:#ff0000 brightness(2)!important;
