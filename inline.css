@@ -5375,6 +5375,12 @@ input.ChatSettingsMembersWidget__search {
  -webkit-filter:#ff0000!important;
  filter:#ff0000!important
 }
+.pv_bottom_info {
+  background-color: #002b36	!important;
+}
+#pv_photo {
+  background-color: #002b36 !important;
+}
 .top_notify_cont .feedback_img {
  background-color:transparent!important
 }
