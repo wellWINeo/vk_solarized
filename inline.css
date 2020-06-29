@@ -5495,8 +5495,11 @@ img.emoji_css {
 .fans_rows .wall_text + .replies {
  border-color:#002b36	!important
 }
-.audio-msg-track .audio-msg-track--btn {
- background-color:#eee8d5!important
+.audio-msg-track {
+ background-color: #073642!important
+}
+.audio-msg-track--btn {
+  background-color: #002b36 !important
 }
 .audio-msg-track .audio-msg-track--wave-wrapper .audio-msg-track--wave path {
  stroke:#eee8d5!important
