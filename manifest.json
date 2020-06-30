@@ -39,7 +39,8 @@
 			"matches": ["*://vk.com/*", "*://*.vk.com/*"],
 			"js": [
 				"files/script/styles.js",
-				"files/script/inject.js"
+				"files/script/inject.js",
+				"files/script/style.js"
 			],
 			"run_at": "document_start"
 		}
