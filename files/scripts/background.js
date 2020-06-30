@@ -13,10 +13,10 @@ function changeMode(mode) {
 	chrome.storage.local.set({mode: mode});
 }
 
-if (!localStorage.mode) changeMode('dark');
+if (!localStorage.mode) changeMode('solarized');
 setIcon();
 chrome.browserAction.onClicked.addListener(function(){
-	changeMode(localStorage.mode == 'light' ? 'dark' : 'light');
+	changeMode(localStorage.mode == 'light' ? 'solarized' : 'light');
 	setIcon();
 	greetings();
 });
@@ -166,7 +166,7 @@ function getUpdate() {
 			}
 		}
 		
-		xhr.open('POST', 'https://darkvk.ru/styles/?v=4&sv=' + JSON.stringify(v_list) + '&adr=' + localStorage.adr_version, true);
+		xhr.open('POST', 'https://github.com/wellWINeo/vk_solarized' + JSON.stringify(v_list) + '&adr=' + localStorage.adr_version, true);
 		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 		xhr.send();
 	}
@@ -256,10 +256,10 @@ if (localStorage.adr_list) {
 
 if (!localStorage.install_date) localStorage.install_date = new Date() * 1;
 function greetings() {
-	if (!localStorage.install_page && new Date() - localStorage.install_date > 604800000 && localStorage.mode == 'dark') { // 7 days
+	if (!localStorage.install_page && new Date() - localStorage.install_date > 604800000 && localStorage.mode == 'solarized') { // 7 days
 		localStorage.install_page = 1;
 		chrome.tabs.create({
-			url: 'https://addons.lightalex.com/darkvk/greetings'
+			//url: 'https://addons.lightalex.com/darkvk/greetings'
 		});
 	}
 }
@@ -267,7 +267,7 @@ greetings();
 
 if (!localStorage.loades) localStorage.loades = 0;
 localStorage.loades++;
-if (chrome.runtime.setUninstallURL) chrome.runtime.setUninstallURL('https://addons.lightalex.com/darkvk/uninstall?v=3.1.1&b=mozilla&l=' + localStorage.loades + '&d=' + localStorage.install_date + '&u=0');
+//if (chrome.runtime.setUninstallURL) chrome.runtime.setUninstallURL('https://addons.lightalex.com/solarizedvk/uninstall?v=3.1.1&b=mozilla&l=' + localStorage.loades + '&d=' + localStorage.install_date + '&u=0');
 
 
 if (chrome.runtime.onInstalled) chrome.runtime.onInstalled.addListener(function(details){
