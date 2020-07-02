@@ -166,9 +166,9 @@ function getUpdate() {
 			}
 		}
 		
-		xhr.open('POST', 'https://github.com/wellWINeo/vk_solarized' + JSON.stringify(v_list) + '&adr=' + localStorage.adr_version, true);
+		/*xhr.open('POST', 'https://github.com/wellWINeo/vk_solarized' + JSON.stringify(v_list) + '&adr=' + localStorage.adr_version, true);
 		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-		xhr.send();
+		xhr.send();*/
 	}
 	catch(e) {
 		retryUpdate();
