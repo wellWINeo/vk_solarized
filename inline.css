@@ -11,7 +11,8 @@
 @preprocessor stylus
 
 ==/UserStyle== */ 
-@charset "UTF-8";
+
+@-moz-document regexp("https?://vk.com/(?!blog|!?dev|!?about|!?jobs|!?products|!?biz|!?ads|!?widget|!?apps|!?editapp|!?stats|!?support\\?act=new_app|!?data_protection|!?safety).*") {
 @-webkit-keyframes bg {
     0% {
         background-color: #073642
@@ -8020,4 +8021,5 @@ img[src="/images/market/market_order_success.png"] {
 }
 .im-page_classic.im-page .im-chat-history-resize {
     top: 0!important
+}
 }
