@@ -10,8 +10,7 @@
 @license      Moziila Public License 2.0
 @preprocessor stylus
 
-==/UserStyle== */ 
-
+==/UserStyle== */
 @-webkit-keyframes bg {
     0% {
         background-color: #073642
@@ -49,7 +48,7 @@ h4 {
 }
 /*span[style="background-color: rgba(255, 255, 255);"] {
     /* background-color:transparent!important */
-   /* background-color: #eee8d5 !important;
+/* background-color: #eee8d5 !important;
 } */
 button {
     background-color: #eee8d5
@@ -80,7 +79,7 @@ input.ui_search_field {
 .wall_module .post_like_icon {
     background-image: url("data:image/svg+xml%charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2214%22%20viewBox%3D%220%200%2016%2014%22%20style%3D%22fill%3A%23FF734C%3B%22%3E%3Cpath%20d%3D%22M8%203.2C7.4-0.3%203.2-0.8%201.4%201%20-0.5%202.9-0.5%205.8%201.4%207.7%201.9%208.2%206.9%2013%206.9%2013%207.4%2013.6%208.5%2013.6%209%2013L14.5%207.7C16.5%205.8%2016.5%202.9%2014.6%201%2012.8-0.7%208.6-0.3%208%203.2Z%22%2F%3E%3C%2Fsvg%3E");
     -webkit-filter: brightness(2)!important;
-    filter: brightness(2)!important 
+    filter: brightness(2)!important
 }
 .wall_module .my_like .post_like_icon {
     -webkit-filter: none!important;
@@ -201,6 +200,35 @@ button:not(.vk_app_modal_btn--deny):not(.podcast_snippet__play) {
 .wd_lnk {
     color: #888!important
 }
+
+.TopSearch__input:focus {
+    color: #eee8d5
+}
+
+[dir] .TopSearch__input {
+ border:0;
+ margin:7px 0;
+ border-radius:14px;
+ background:#073642 url(/images/svg_icons/ic_head_loupe.svg) no-repeat
+}
+[dir=ltr] .TopSearch__input {
+ padding:6px 6px 6px 19px;
+ padding-left:19px;
+ border-left:8px solid transparent;
+ background-position:left 7px
+}
+[dir=rtl] .TopSearch__input {
+ padding:6px 19px 6px 6px;
+ padding-right:19px;
+ border-right:8px solid transparent;
+ background-position:right 8px
+}
+
+#page_header_wrap {
+    direction: ltr;
+    background-color: #002b36
+}
+
 #page_header_cont .back {
     background-color: #002b36!important;
     border-color: #002b36!important;
@@ -665,8 +693,8 @@ body:not(.article_ed_body) .eltt {
     background-color: #eee8d5!important
 }
 .top_nav_btn#top_notify_btn .top_nav_btn_icon {
-     -webkit-filter: brightness(2)!important;
-    filter: brightness(2)!important 
+    -webkit-filter: brightness(2)!important;
+    filter: brightness(2)!important
 }
 .top_nav_btn#top_audio .top_nav_btn_icon {
     -webkit-filter: brightness(2)!important;
@@ -7968,9 +7996,9 @@ img[src="/images/market/market_order_success.png"] {
     fill: transparent!important
 }
 [style="background-color: #ffffff"] {
-/*[style="background-color: rgb(255,255,255)"] { */
+    /*[style="background-color: rgb(255,255,255)"] { */
     background: transparent!important
-} 
+}
 .apps_catalog_row {
     position: relative;
     z-index: 2
